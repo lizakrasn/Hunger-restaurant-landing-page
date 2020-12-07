@@ -1,0 +1,28 @@
+.events {
+  padding: 45px 0;
+  text-align: center;
+  color: $main-color;
+
+  background-image: url(/src/images/specialty-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__subtitle {
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+  }
+
+  &__images {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__contacts {
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &__contacts-strong {
+    font-weight: 700;
+  }
+}
