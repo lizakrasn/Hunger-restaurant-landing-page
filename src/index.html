@@ -64,7 +64,7 @@
     
     <section class="booking">
       <div class="booking__info">
-        <p class="booking__title">Book a table</p>
+        <p class="booking__title title">Book a table</p>
         <form class="booking__form">
           <label class="booking__label" for="name">
             <input
@@ -151,6 +151,39 @@
         Phone: 
         <span class="booking__footer-strong">+40 729 131 637/+40 726 458 782</span>
       </p>
+    </section>
+
+    <section class="specialties">
+      <p class="specialties__subtitle">Specialties</p>
+      <div class="specialties__info">
+        <div class="specialties__image image image--reverse">
+          <img
+            class="image__item"
+            src="<%=require('./images/chocolate-pancakes.png')%>"
+            alt="chocolate pancakes"
+          >
+        </div>
+        <div class="specialties__item">
+          <p class="specialties__item-name title">Chocolate pancakes</p>
+          <p class="specialties__item-description">
+            Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. Duis at velit maximus, molestie est a, 
+            tempor magna.
+          </p>
+          <p class="specialties__item-comment">
+            Integer ullamcorper neque eu purus euismod, 
+            ac faucibus mauris posuere. Morbi non ultrices ligula.
+            Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, 
+            a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. 
+            Nulla facilisis semper laoreet.
+          </p>
+        </div>
+      </div>
+      <div class="specialties__buttons">
+        <div class="specialties__button"></div>
+        <div class="specialties__button specialties__button--active"></div>
+        <div class="specialties__button"></div>
+      </div>
     </section>
   </body>
 </html>

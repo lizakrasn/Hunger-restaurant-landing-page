@@ -20,4 +20,12 @@
 
     object-fit: cover;
   }
+
+  &--reverse {
+    &::after {
+      position: absolute;
+      top: calc(50% - 125px);
+      left: -65px;
+    }
+  }
 }

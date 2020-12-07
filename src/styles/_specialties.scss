@@ -1,0 +1,61 @@
+.specialties {
+  padding: 0 75px 42px 140px;
+
+  text-align: center;
+  color: $main-color;
+  background-image: url(/src/images/specialty-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__subtitle {
+    padding-top: 45px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    max-width: 500px;
+    line-height: 26px;
+  }
+
+  &__item-name {
+    padding-bottom: 15px;
+    margin-bottom: 18px;
+  }
+
+  &__item-description {
+    margin-bottom: 20px;
+  }
+
+  &__item-comment {
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  &__button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 9px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: background-color 300ms;
+
+    &:hover {
+      background-color: $accent-color;
+    }
+
+    &--active {
+      background-color: $main-color;
+    }
+  }
+}
