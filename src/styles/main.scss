@@ -1,3 +1,6 @@
-body {
-  background-color: green;
-}
+@import "_variables";
+@import "_fonts.scss";
+@import "_reset.scss";
+@import "_header.scss";
+@import "_button";
+@import "_navigation.scss";

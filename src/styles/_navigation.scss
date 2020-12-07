@@ -1,0 +1,31 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 75px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    width: 124px;
+    margin: 40px 0;
+    text-align: center;
+    list-style: none;
+    text-transform: uppercase;
+  }
+
+  &__item-link {
+    text-decoration: none;
+
+    transition: color 300ms;
+
+    &:visited {
+      color: $main-color;
+    }
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
