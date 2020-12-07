@@ -1,0 +1,24 @@
+.dish-item {
+  max-width: 360px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+
+  &__name,
+  &__price {
+    font-family: "Banny", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    padding-left: 10px;
+  }
+
+  &__description {
+    grid-column: 1 / span 2;
+
+    font-weight: 400;
+    color: #B2B2B2;
+  }
+}
