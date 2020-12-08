@@ -4,7 +4,7 @@ import clock from "./scripts/clock";
 import animateText from "./scripts/animateText";
 import addBurgerAutoClose from "./scripts/closeBurgerMenu";
 import submitForm from "./scripts/submitForm";
-import slider from "./scripts/gallery";
+import slider from "./scripts/slider";
 
 generateDishItem();
 clock();
