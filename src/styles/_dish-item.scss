@@ -21,4 +21,13 @@
     font-weight: 400;
     color: #B2B2B2;
   }
+
+  @media screen and (max-width: 500px) {
+    max-width: 280px;
+    
+    &__name,
+    &__price {
+    font-size: 14px;
+  }
+  }
 }

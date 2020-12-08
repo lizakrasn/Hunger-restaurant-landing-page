@@ -245,9 +245,25 @@
       left: unset;
       right: 30px;
     }
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 470px;
+
+    &__background-image {
+      width: 30px;
+      height: 30px;
+      top: 15px;
+      right: 20px;
+    }
+
+    &__title {
+      font-size: 34px;
+    }
 
     &__time {
-      top: 25px;
+      top: 60px;
+      font-size: 16px;
     }
   }
 }

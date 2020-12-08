@@ -67,4 +67,28 @@
       align-items: center;
     }
   }
+
+  @media screen and (max-width: 500px) {
+    padding: 30px 20px;
+
+    &__dish-item {
+      margin: 0 0 20px;
+    }
+
+    &__list {
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+
+    &__item {
+      margin: 5px 0;
+      padding: 0;
+      border: none;
+      border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+    }
+
+    &__list .menu__item:last-child {
+      border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+    }
+  }
 }

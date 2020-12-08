@@ -87,4 +87,28 @@
     left: calc(50% - 175px);
     bottom: 25px;
   }
+
+  @media screen and (max-width: 500px) {
+    padding: 30px 20px 50px;
+
+    &__info {
+      width: 100%;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__input {
+      width: 100%;
+      height: 46px;
+    }
+
+    &__footer {
+      max-width: 270px;
+      left: calc(50% - 135px);
+      bottom: 20px;
+    }
+  }
 }
