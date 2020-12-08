@@ -19,7 +19,7 @@
 
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__item-link">Home</a>
+            <a href="#header" class="navigation__item-link">Home</a>
           </li>
           <li class="navigation__item">
             <a href="#" class="navigation__item-link">About</a>
@@ -28,18 +28,18 @@
             <a href="#" class="navigation__item-link">Team</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__item-link">Booking</a>
+            <a href="#booking" class="navigation__item-link">Booking</a>
           </li>
         </ul>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__item-link">Menu</a>
+            <a href="#menu" class="navigation__item-link">Menu</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__item-link">Galerie</a>
+            <a href="#galerie" class="navigation__item-link">Galerie</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__item-link">Events</a>
+            <a href="#events" class="navigation__item-link">Events</a>
           </li>
           <li class="navigation__item">
             <a href="#" class="navigation__item-link">Contact</a>
@@ -71,10 +71,10 @@
       </div>
     </section>
     
-    <section class="booking">
+    <section class="booking" id="booking">
       <div class="booking__info">
         <p class="booking__title title">Book a table</p>
-        <form class="booking__form">
+        <form class="booking__form" id="form">
           <label class="booking__label" for="name">
             <input
               type="text"
@@ -87,7 +87,7 @@
 
           <label class="booking__label" for="email">
             <input
-              type="text"
+              type="email"
               placeholder="Email"
               id="email"
               class="booking__input"
@@ -97,7 +97,7 @@
 
           <label class="booking__label" for="phone">
             <input
-              type="text"
+              type="tel"
               placeholder="Phone"
               id="phone"
               class="booking__input"
@@ -116,7 +116,7 @@
 
           <label class="booking__label" for="date">
             <input
-              type="text"
+              type="date"
               placeholder="Date(mm/dd)"
               id="date"
               class="booking__input"
@@ -126,13 +126,9 @@
 
           <select class="booking__select booking__input" name="time">
             <option class="booking__option" value="0" selected disabled>Time</option>
-            <option class="booking__option" value="12am">12 am</option> 
-            <option class="booking__option" value="1pm">1 pm</option>
-            <option class="booking__option" value="2pm">2 pm</option>
-            <option class="booking__option" value="3pm">3 pm</option>
-            <option class="booking__option" value="4pm">4 pm</option>
-            <option class="booking__option" value="5pm">5 pm</option>
-            <option class="booking__option" value="6pm">6 pm</option>
+            <option class="booking__option" value="8pm">8 pm</option>
+            <option class="booking__option" value="9pm">9 pm</option>
+            <option class="booking__option" value="10pm">10 pm</option>
           </select>
           
           <button
@@ -162,9 +158,33 @@
       </p>
     </section>
 
-    <section class="specialties">
+    <section class="specialties" id="galerie">
       <p class="specialties__subtitle">Specialties</p>
-      <div class="specialties__info">
+      <div class="specialties__info specialties__info--hidden" data-index="1">
+        <div class="specialties__image image image--reverse">
+          <img
+            class="image__item"
+            src="<%=require('./images/cheesecake.jpg')%>"
+            alt="chocolate pancakes"
+          >
+        </div>
+        <div class="specialties__item">
+          <p class="specialties__item-name title">Cheesecake</p>
+          <p class="specialties__item-description">
+            Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. Duis at velit maximus, molestie est a, 
+            tempor magna.
+          </p>
+          <p class="specialties__item-comment">
+            Integer ullamcorper neque eu purus euismod, 
+            ac faucibus mauris posuere. Morbi non ultrices ligula.
+            Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, 
+            a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. 
+            Nulla facilisis semper laoreet.
+          </p>
+        </div>
+      </div>
+      <div class="specialties__info" data-index="2">
         <div class="specialties__image image image--reverse">
           <img
             class="image__item"
@@ -188,14 +208,38 @@
           </p>
         </div>
       </div>
+      <div class="specialties__info specialties__info--hidden" data-index="3">
+        <div class="specialties__image image image--reverse">
+          <img
+            class="image__item"
+            src="<%=require('./images/icecream.jpg')%>"
+            alt="chocolate pancakes"
+          >
+        </div>
+        <div class="specialties__item">
+          <p class="specialties__item-name title">Ice Cream</p>
+          <p class="specialties__item-description">
+            Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. Duis at velit maximus, molestie est a, 
+            tempor magna.
+          </p>
+          <p class="specialties__item-comment">
+            Integer ullamcorper neque eu purus euismod, 
+            ac faucibus mauris posuere. Morbi non ultrices ligula.
+            Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, 
+            a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. 
+            Nulla facilisis semper laoreet.
+          </p>
+        </div>
+      </div>
       <div class="specialties__buttons">
-        <div class="specialties__button"></div>
-        <div class="specialties__button specialties__button--active"></div>
-        <div class="specialties__button"></div>
+        <div class="specialties__button" data-index="1"></div>
+        <div class="specialties__button specialties__button--active" data-index="2"></div>
+        <div class="specialties__button" data-index="3"></div>
       </div>
     </section>
 
-    <section class="menu">
+    <section class="menu" id="menu">
       <p class="menu__title title">Delicious menu</p>
       <p class="menu__subtitle">
         Lorem ipsum dolor sit amet, 
@@ -215,7 +259,7 @@
       <!-- add 27 dishe-item using JS -->
     </section>
 
-    <section class="events">
+    <section class="events" id="events">
       <p class="events__subtitle">Private events</p>
       <div class="events__images">
         <div class="events__image image image--reverse">
