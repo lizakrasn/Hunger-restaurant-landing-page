@@ -1,5 +1,3 @@
-import { set } from "lodash";
-
 export default function() {
   const dishes = [...document.querySelectorAll(".specialties__info")];
   const buttons = [...document.querySelectorAll(".specialties__button")];
