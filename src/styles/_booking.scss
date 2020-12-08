@@ -1,8 +1,8 @@
 .booking {
-  padding: 25px 75px 65px;
+  padding: 70px 120px 120px 75px;
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 
   &__info {
@@ -57,17 +57,26 @@
   }
 
   @media screen and (max-width: 1200px) {
-    padding: 25px 20px 65px 60px;
+    padding: 70px 60px 120px;
     justify-content: space-between;
 
     &__info {
       width: 470px;
-      height: fit-content;
     }
 
     &__input {
       width: 230px;
       height: 46px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    &__info {
+      width: 400px;
+    }
+
+    &__input {
+      width: 190px;
     }
   }
 }

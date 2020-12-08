@@ -168,7 +168,11 @@
     }
 
     &__main {
-      margin: 0 65px;
+      margin: 0 60px;
     }
+  }
+
+  @media screen and (max-width: 1000px) {
+    height: 600px;
   }
 }

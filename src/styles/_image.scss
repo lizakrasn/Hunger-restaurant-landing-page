@@ -1,6 +1,6 @@
 .image {
-  width: 535px;
-  height: 535px;
+  width: 442px;
+  height: 442px;
   position: relative;
 
   &::after {
@@ -9,7 +9,7 @@
     height: 190px;
     position: absolute;
     top: calc(50% - 125px);
-    right: -60px;
+    right: -110px;
 
     border: 18px solid $accent-color;
   }
@@ -22,15 +22,15 @@
   }
 
   &__title-container {
-    height: 442px;
+    height: 100%;
     width: 76px;
     padding: 15px 0;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     position: absolute;
-    top: 46px;
-    left: 44px;
+    top: 0;
+    left: 0;
 
     background-color: black;
   }
@@ -48,12 +48,12 @@
     &::after {
       position: absolute;
       top: calc(50% - 125px);
-      left: -65px;
+      left: -115px;
     }
 
     .image__title-container {
       align-items: flex-start;
-      right: 44px;
+      right: 0;
       left: unset;
     }
   
@@ -63,24 +63,23 @@
   }
 
   @media screen and (max-width: 1300px) {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 
     &::after {
       content: "";
       width: 120px;
-      height: 120px;
+      height: 130px;
       top: calc(50% - 75px);
-      right: -35px;
+      right: -70px;
   
       border: 12px solid $accent-color;
     }
 
     &__title-container {
-      height: 331px;
       width: 65px;
-      top: 34px;
-      left: 35px;
+      top: 0;
+      left: 0;
     }
 
     &__title {
@@ -91,11 +90,11 @@
       &::after {
         position: absolute;
         top: calc(50% - 75px);
-        left: -40px;
+        left: -75px;
       }
 
       .image__title-container {
-        right: 35px;
+        right: 0;
       }
     }
   }

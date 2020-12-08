@@ -1,5 +1,5 @@
 .events {
-  padding: 45px 120px 45px;
+  padding: 0 75px;
   text-align: center;
   color: $main-color;
 
@@ -8,16 +8,19 @@
   background-size: cover;
 
   &__subtitle {
+    padding: 45px 0;
     letter-spacing: 0.5em;
     text-transform: uppercase;
   }
 
   &__images {
+    padding: 0 120px;
     display: flex;
     justify-content: space-between;
   }
 
   &__contacts {
+    padding: 42px 0;
     font-weight: normal;
     color: rgba(255, 255, 255, 0.5);
   }
@@ -28,5 +31,15 @@
 
   @media screen and (max-width: 1300px) {
     padding: 45px 110px 45px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding: 0 60px;
+
+    &__images {
+      padding: 0 75px;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

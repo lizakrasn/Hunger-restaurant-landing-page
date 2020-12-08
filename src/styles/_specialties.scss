@@ -1,5 +1,5 @@
 .specialties {
-  padding: 0 75px 42px 140px;
+  padding: 0 75px;
 
   text-align: center;
   color: $main-color;
@@ -8,12 +8,13 @@
   background-size: cover;
 
   &__subtitle {
-    padding-top: 45px;
+    padding: 45px 0;
     letter-spacing: 0.5em;
     text-transform: uppercase;
   }
 
   &__info {
+    padding-left: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,6 +39,10 @@
     color: rgba(255, 255, 255, 0.8);
   }
 
+  &__buttons {
+    padding: 42px 0;
+  }
+
   &__button {
     width: 10px;
     height: 10px;
@@ -60,10 +65,21 @@
   }
 
   @media screen and (max-width: 1200px) {
-    padding: 0 65px 42px 130px;
+    padding: 0 60px;
+
+    &__info {
+      padding-left: 75px;
+    }
 
     &__item {
       max-width: 430px;
+      line-height: 26px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    &__item {
+      max-width: 400px;
       line-height: 26px;
     }
   }
