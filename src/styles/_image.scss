@@ -98,4 +98,35 @@
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    width: 190px;
+    height: 190px;
+
+    &::after {
+      width: 65px;
+      height: 80px;
+      top: calc(50% - 50px);
+      right: -40px;
+      border: 10px solid $accent-color;
+    }
+
+    &__title-container {
+      width: 40px;
+      top: 0;
+      left: 0;
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &--reverse {
+      &::after {
+        position: absolute;
+        top: calc(50% - 50px);
+        left: -45px;
+      }
+    }
+  }
 }
