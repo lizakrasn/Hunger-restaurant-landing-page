@@ -10,7 +10,7 @@ generateDishItem();
 clock();
 addBurgerAutoClose();
 submitForm();
-sloder();
+slider();
 
 const navigationItems = document.querySelectorAll('.navigation__item-link')
 navigationItems.forEach(navigationItem => animateText(navigationItem));
