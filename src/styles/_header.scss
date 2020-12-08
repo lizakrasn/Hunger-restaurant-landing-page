@@ -161,4 +161,14 @@
       background-color: $accent-color;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    &__title {
+      font-size: 70px;
+    }
+
+    &__main {
+      margin: 0 65px;
+    }
+  }
 }

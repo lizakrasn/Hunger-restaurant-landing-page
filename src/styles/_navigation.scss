@@ -28,4 +28,11 @@
       color: $accent-color;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    &__item {
+      width: 80px;
+      margin: 40px 0;
+    }
+  }
 }

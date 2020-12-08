@@ -58,4 +58,13 @@
       background-color: $main-color;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    padding: 0 65px 42px 130px;
+
+    &__item {
+      max-width: 430px;
+      line-height: 26px;
+    }
+  }
 }

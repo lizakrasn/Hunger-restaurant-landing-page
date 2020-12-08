@@ -30,7 +30,7 @@
     justify-content: center;
     position: absolute;
     top: 46px;
-    left: 46px;
+    left: 44px;
 
     background-color: black;
   }
@@ -53,12 +53,50 @@
 
     .image__title-container {
       align-items: flex-start;
-      right: 46px;
+      right: 44px;
       left: unset;
     }
   
     .image__title {
       transform: rotate(0deg);
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    width: 400px;
+    height: 400px;
+
+    &::after {
+      content: "";
+      width: 120px;
+      height: 120px;
+      top: calc(50% - 75px);
+      right: -35px;
+  
+      border: 12px solid $accent-color;
+    }
+
+    &__title-container {
+      height: 331px;
+      width: 65px;
+      top: 34px;
+      left: 35px;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &--reverse {
+      &::after {
+        position: absolute;
+        top: calc(50% - 75px);
+        left: -40px;
+      }
+
+      .image__title-container {
+        right: 35px;
+      }
     }
   }
 }
