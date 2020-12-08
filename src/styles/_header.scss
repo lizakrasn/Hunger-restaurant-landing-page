@@ -9,6 +9,7 @@
   background-image: url(/src/images/header-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   &__background-image {
     width: 140px;
@@ -174,5 +175,64 @@
 
   @media screen and (max-width: 1000px) {
     height: 600px;
+
+    &__main {
+      max-width: 410px;
+      margin: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: 3 repeat(1fr);
+      row-gap: 20px;
+    }
+
+    &__info {
+      grid-row: 1;
+    }
+
+    &__title {
+      font-size: 50px;
+    }
+
+    &__calendar {
+      grid-row: 3;
+      transform: rotate(0deg);
+      writing-mode: horizontal-tb;
+    }
+
+    &__background-image {
+      width: 100px;
+      height: 100px;
+      left: calc(50% - 50px);
+    }
+
+    &__time {
+      font-size: 30px;
+    }
+
+    &__time-block {
+      justify-self: center;
+    }
+
+    &__social-networks {
+      justify-self: center;
+    }
+
+    &__social-button {
+      display: inline-block;
+      margin: 0 5px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &__button-down-container {
+      bottom: 40px;
+      left: calc(50% - 20px);
+      width: 40px;
+      height: 40px;
+    }
+  
+    &__button-down {
+      width: 25px;
+      height: 25px;
+    }
   }
 }

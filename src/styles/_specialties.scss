@@ -6,6 +6,7 @@
   background-image: url(/src/images/specialty-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   &__subtitle {
     padding: 45px 0;
@@ -78,9 +79,19 @@
   }
 
   @media screen and (max-width: 1000px) {
+    padding: 0 30px;
+
+    &__info {
+      padding-left: 0;
+      flex-direction: column-reverse;
+    }
+
+    &__image {
+      margin-top: 25px;
+    }
+
     &__item {
-      max-width: 400px;
-      line-height: 26px;
+      max-width: 470px;
     }
   }
 }

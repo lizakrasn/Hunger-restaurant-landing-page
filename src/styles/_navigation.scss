@@ -35,4 +35,12 @@
       margin: 40px 0;
     }
   }
+
+  @media screen and (max-width: 1000px) {
+    padding: 0 30px;
+
+    &__item {
+      width: 70px;
+    }
+  }
 }
