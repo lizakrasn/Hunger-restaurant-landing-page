@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Getting Started</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <section class="header">
+      <div class="header__background-image"></div>
+
+      <nav class="navigation header__navigation">
+        <input
+          type="checkbox"
+          class="navigation__toggler"
+          id="navigation-toggler"
+        >
+        <label class="navigation__toggler-label" for="navigation-toggler"></label>
+
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#header" class="navigation__item-link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__item-link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__item-link">Team</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#booking" class="navigation__item-link">Booking</a>
+          </li>
+        </ul>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#menu" class="navigation__item-link">Menu</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#galerie" class="navigation__item-link">Galerie</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#events" class="navigation__item-link">Events</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__item-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__main">
+        <div class="header__time-block">
+          <p id="clock" class="header__time">Left: 13:59</p>
+          <p class="header__calendar">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+        </div>
+        <div class="header__info">
+          <p class="header__subtitle">Restaurant</p>
+          <p class="header__title">Hungry People</p>
+          <div class="header__buttons">
+            <button class="header__button button button--yellow">Book table</button>
+            <button class="header__button button">Explore</button>
+          </div>
+        </div>
+        <div class="header__social-networks">
+          <a href="#" class="header__social-button header__social-button--facebook"></a>
+          <a href="#" class="header__social-button header__social-button--twitter"></a>
+          <a href="#" class="header__social-button header__social-button--instagram"></a>
+        </div>
+      </div>
+      <div class="header__button-down-container">
+        <button class="header__button-down"></button>
+      </div>
+    </section>
+    
+    <section class="booking" id="booking">
+      <div class="booking__info">
+        <p class="booking__title title">Book a table</p>
+        <form class="booking__form" id="form">
+          <label class="booking__label" for="name">
+            <input
+              type="text"
+              placeholder="Name"
+              id="name"
+              class="booking__input"
+              required
+            >
+          </label>
+
+          <label class="booking__label" for="email">
+            <input
+              type="email"
+              placeholder="Email"
+              id="email"
+              class="booking__input"
+              required
+            >
+          </label>
+
+          <label class="booking__label" for="phone">
+            <input
+              type="tel"
+              placeholder="Phone"
+              id="phone"
+              class="booking__input"
+              required
+            >
+          </label>
+
+          <select class="booking__select booking__input" name="people">
+            <option class="booking__option" value="0" selected disabled>People</option>
+            <option class="booking__option" value="1">1</option> 
+            <option class="booking__option" value="2">2</option>
+            <option class="booking__option" value="3">3</option>
+            <option class="booking__option" value="4">4</option>
+            <option class="booking__option" value="more">5 - 8</option>
+          </select>
+
+          <label class="booking__label" for="date">
+            <input
+              type="date"
+              placeholder="Date(mm/dd)"
+              id="date"
+              class="booking__input"
+              required
+            >
+          </label>
+
+          <select class="booking__select booking__input" name="time">
+            <option class="booking__option" value="0" selected disabled>Time</option>
+            <option class="booking__option" value="8pm">8 pm</option>
+            <option class="booking__option" value="9pm">9 pm</option>
+            <option class="booking__option" value="10pm">10 pm</option>
+          </select>
+          
+          <button
+            type="submit"
+            class="booking__button button button--yellow"
+          >
+            Book now
+          </button>
+        </form>
+      </div>
+
+      <div class="booking__image image">
+        <img
+          class=" image__item"
+          src="0233f24d8f126e1a59ee.png"
+          alt="clock"
+        >
+      </div>
+
+      <p class="booking__footer">
+        Mon - Fri: 
+        <span class="booking__footer-strong">8PM - 10PM,</span>
+        Sat - Sun: 
+        <span class="booking__footer-strong">8PM - 3AM,</span>
+        Phone: 
+        <span class="booking__footer-strong">+40 729 131 637/+40 726 458 782</span>
+      </p>
+    </section>
+
+    <section class="specialties" id="galerie">
+      <p class="specialties__subtitle">Specialties</p>
+      <div class="specialties__info specialties__info--hidden" data-index="1">
+        <div class="specialties__image image image--reverse">
+          <img
+            class="image__item"
+            src="038a3fd1b22c8449d594.jpg"
+            alt="chocolate pancakes"
+          >
+        </div>
+        <div class="specialties__item">
+          <p class="specialties__item-name title">Cheesecake</p>
+          <p class="specialties__item-description">
+            Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. Duis at velit maximus, molestie est a, 
+            tempor magna.
+          </p>
+          <p class="specialties__item-comment">
+            Integer ullamcorper neque eu purus euismod, 
+            ac faucibus mauris posuere. Morbi non ultrices ligula.
+            Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, 
+            a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. 
+            Nulla facilisis semper laoreet.
+          </p>
+        </div>
+      </div>
+      <div class="specialties__info" data-index="2">
+        <div class="specialties__image image image--reverse">
+          <img
+            class="image__item"
+            src="3113801130d1b21b3b98.png"
+            alt="chocolate pancakes"
+          >
+        </div>
+        <div class="specialties__item">
+          <p class="specialties__item-name title">Chocolate pancakes</p>
+          <p class="specialties__item-description">
+            Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. Duis at velit maximus, molestie est a, 
+            tempor magna.
+          </p>
+          <p class="specialties__item-comment">
+            Integer ullamcorper neque eu purus euismod, 
+            ac faucibus mauris posuere. Morbi non ultrices ligula.
+            Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, 
+            a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. 
+            Nulla facilisis semper laoreet.
+          </p>
+        </div>
+      </div>
+      <div class="specialties__info specialties__info--hidden" data-index="3">
+        <div class="specialties__image image image--reverse">
+          <img
+            class="image__item"
+            src="857aa4619aa42010aa35.jpg"
+            alt="chocolate pancakes"
+          >
+        </div>
+        <div class="specialties__item">
+          <p class="specialties__item-name title">Ice Cream</p>
+          <p class="specialties__item-description">
+            Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. Duis at velit maximus, molestie est a, 
+            tempor magna.
+          </p>
+          <p class="specialties__item-comment">
+            Integer ullamcorper neque eu purus euismod, 
+            ac faucibus mauris posuere. Morbi non ultrices ligula.
+            Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, 
+            a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. 
+            Nulla facilisis semper laoreet.
+          </p>
+        </div>
+      </div>
+      <div class="specialties__buttons">
+        <div class="specialties__button" data-index="1"></div>
+        <div class="specialties__button specialties__button--active" data-index="2"></div>
+        <div class="specialties__button" data-index="3"></div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <p class="menu__title title">Delicious menu</p>
+      <p class="menu__subtitle">
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Duis at velit maximus, molestie est a, tempor magna.
+      </p>
+      <ul class="menu__list">
+        <li class="menu__item">Soupe</li>
+        <li class="menu__item">Pizza</li>
+        <li class="menu__item">Pasta</li>
+        <li class="menu__item">Desert</li>
+        <li class="menu__item">Wine</li>
+        <li class="menu__item">Beer</li>
+        <li class="menu__item">Drinks</li>
+      </ul>
+      <div class="menu__dishes"></div>
+      <!-- add 27 dishe-item using JS -->
+    </section>
+
+    <section class="events" id="events">
+      <p class="events__subtitle">Private events</p>
+      <div class="events__images">
+        <div class="events__image image image--reverse">
+          <img
+            class=" image__item"
+            src="fbed389f5dbce3ccb046.png"
+            alt="clock"
+          >
+          <div class="image__title-container">
+            <p class="image__title">Weddings</p>
+          </div>
+        </div>
+        <div class="events__image image">
+          <img
+            class=" image__item"
+            src="4c6440eae2324647437f.png"
+            alt="clock"
+          >
+          <div class="image__title-container">
+            <p class="image__title">Corporate pzrties</p>
+          </div>
+        </div>
+      </div>
+      <p class="events__contacts">
+        For private events please call: 
+        <span class="events__contacts-strong">+40 729 131 637/+40 726 458 782</span> 
+        or use the contact form.
+      </p>
+    </section>
+  <script src="main.js"></script></body>
+</html>
